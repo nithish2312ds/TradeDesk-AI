@@ -60,7 +60,7 @@ TradeDesk AI gives traders and analysts a single interface to:
 
 ### 4 — RAG · Document Q&A
 
-**What it does:** Answers natural language questions about CBA's FY2025 Annual Report (229 pages) using Retrieval-Augmented Generation. The document was chunked at 150 words with 20-word overlap, embedded using `sentence-transformers/all-MiniLM-L6-v2` and stored in Qdrant Cloud. At query time, the top 6 most relevant chunks are retrieved and passed to Groq LLaMA to generate a cited answer.
+**What it does:** Answers natural language questions about ingested documents using Retrieval-Augmented Generation. The documents were chunked at 150 words with 20-word overlap, embedded using `sentence-transformers/all-MiniLM-L6-v2` and stored in Qdrant Cloud. At query time, the top 6 most relevant chunks are retrieved and passed to Groq LLaMA to generate a cited answer.
 
 **How to use it:** Type any question about the document or click a quick-question button (NIM, Risks, Dividend, CEO, CET1, Revenue). The answer appears with page citations and the number of chunks retrieved.
 
